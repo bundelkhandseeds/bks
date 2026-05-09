@@ -1,0 +1,22 @@
+.swiper-container {
+  position: relative;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-bottom: 2.75rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.125rem !important;
+  font-weight: 700;
+}
+
+.swiper-slide img {
+  aspect-ratio: 4 / 3;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide img {
+    aspect-ratio: 3 / 2;
+  }
+}

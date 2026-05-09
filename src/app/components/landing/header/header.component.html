@@ -1,58 +1,52 @@
-<header class="absolute inset-x-0 top-0 z-50">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-    <div class="flex lg:flex-1">
-      <a href="#" class="-m-1.5 p-1.5 flex items-center gap-3">
-        <span class="sr-only">Bundelkhand Seeds</span>
-        <img src="/bks-logo.png" alt="" width="56" height="84" class="h-14 w-auto shrink-0 object-contain" />
-        <div class="text-xl font-semibold text-gray-900">Bundelkhand Seeds Pvt. Ltd.</div>
+<header
+  class="absolute inset-x-0 top-0 z-50 border-b border-stone-200/55 bg-white/88 backdrop-blur-md supports-[backdrop-filter]:bg-white/75"
+>
+  <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-4 sm:px-6 lg:px-8" aria-label="Primary">
+    <div class="flex min-w-0 flex-1 items-center lg:flex-none">
+      <a routerLink="/" class="-m-1 flex min-w-0 items-start gap-3 rounded-md p-1 outline-offset-4 ring-bks-forest focus-visible:ring-2">
+        <span class="sr-only">Bundelkhand Seeds — home</span>
+        <img src="/bks-logo.png" alt="" width="56" height="84" class="h-12 w-auto shrink-0 object-contain sm:h-14" />
+        <div class="min-w-0 pt-0.5">
+          <div class="text-base font-semibold leading-tight text-bks-forest sm:text-lg">Bundelkhand Seeds Pvt. Ltd.</div>
+          <div class="mt-0.5 text-xs font-medium text-stone-600 sm:text-sm">Jalaun, Uttar Pradesh</div>
+          <div class="mt-1 hidden font-serif text-[0.6875rem] font-medium uppercase tracking-[0.12em] text-bks-gold md:block">
+            Vegetable green pea specialists
+          </div>
+        </div>
       </a>
     </div>
-    <div class="flex lg:hidden">
-      <a [routerLink]="'products'" class="text-sm/6 font-semibold text-gray-900">Products</a>
-    </div>
-    <div class="hidden lg:flex lg:gap-x-12">
-      <a [routerLink]="'products'" class="text-sm/6 font-semibold text-gray-900">Products</a>
-    </div>
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <!--        <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>-->
-      <a href="#" class="text-sm/6 font-semibold text-gray-900 flex flex-row space-x-2 items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+
+    <div class="flex items-center gap-4 sm:gap-6 lg:flex-1 lg:justify-end">
+      <div class="hidden sm:block">
+        <a
+          routerLink="/products"
+          routerLinkActive="text-bks-forest"
+          [routerLinkActiveOptions]="{ exact: false }"
+          class="rounded-md px-2 py-1 text-sm font-semibold text-stone-700 underline-offset-4 transition-colors hover:text-bks-forest hover:underline"
+        >
+          Products
+        </a>
+      </div>
+      <a
+        href="tel:+919415114208"
+        class="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-bks-paper px-3.5 py-2 text-sm font-semibold text-bks-earth shadow-sm transition hover:border-bks-sage-soft hover:bg-white"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-[1.125rem] shrink-0 text-bks-forest" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
         </svg>
-        <span>+91 9415114208</span>
+        <span><span class="sr-only">Call </span>+91 94151 14208</span>
+      </a>
+    </div>
+
+    <div class="basis-full pt-2 sm:hidden">
+      <a
+        routerLink="/products"
+        routerLinkActive="text-bks-forest"
+        [routerLinkActiveOptions]="{ exact: false }"
+        class="rounded-md px-1 text-sm font-semibold text-stone-700 underline-offset-4 hover:text-bks-forest hover:underline"
+      >
+        Products
       </a>
     </div>
   </nav>
-  <!-- Mobile menu, show/hide based on menu open state. -->
-<!--  <div class="lg:hidden" role="dialog" aria-modal="true">-->
-<!--    &lt;!&ndash; Background backdrop, show/hide based on slide-over state. &ndash;&gt;-->
-<!--    <div class="fixed inset-0 z-50"></div>-->
-<!--    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">-->
-<!--      <div class="flex items-center justify-between">-->
-<!--        <a href="#" class="-m-1.5 p-1.5">-->
-<!--          <span class="sr-only">Your Company</span>-->
-<!--          <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">-->
-<!--        </a>-->
-<!--        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">-->
-<!--          <span class="sr-only">Close menu</span>-->
-<!--          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">-->
-<!--            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />-->
-<!--          </svg>-->
-<!--        </button>-->
-<!--      </div>-->
-<!--      <div class="mt-6 flow-root">-->
-<!--        <div class="-my-6 divide-y divide-gray-500/10">-->
-<!--          <div class="space-y-2 py-6">-->
-<!--            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>-->
-<!--            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>-->
-<!--            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>-->
-<!--            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>-->
-<!--          </div>-->
-<!--          <div class="py-6">-->
-<!--            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
 </header>

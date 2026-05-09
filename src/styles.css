@@ -1,2 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-serif: "Source Serif 4", ui-serif, Georgia, serif;
+
+  --color-bks-paper: #f8f6f1;
+  --color-bks-cream: #efeadf;
+  --color-bks-forest: #1a4d3a;
+  --color-bks-forest-dark: #0f3025;
+  --color-bks-sage: #5c8f6f;
+  --color-bks-sage-soft: #a8c9b4;
+  --color-bks-gold: #9a7b3d;
+  --color-bks-earth: #3d382f;
+
+  --radius-bks-lg: 1rem;
+}
+
+@layer base {
+  body {
+    @apply bg-bks-paper text-stone-800 antialiased font-sans;
+    margin: 0;
+    min-height: 100vh;
+  }
+}
+
+/* Swiper (used on landing) — brand-tinted controls */
+:root {
+  --swiper-theme-color: #1a4d3a;
+  --swiper-navigation-size: 1.75rem;
+  --swiper-pagination-bullet-inactive-opacity: 0.35;
+}

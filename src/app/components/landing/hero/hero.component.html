@@ -1,17 +1,86 @@
-<div class="mt-24">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <!-- Loop through the images array and display each image -->
-      <div class="swiper-slide" *ngFor="let item of images">
-        <img [src]="item.src" [alt]="item.alt" class="w-full h-auto rounded-lg shadow-lg" />
+<div class="bg-bks-paper">
+  <!-- Hero -->
+  <section
+    class="relative overflow-hidden border-b border-stone-200/80 bg-gradient-to-b from-white via-bks-paper to-bks-cream/40 pb-14 pt-28 sm:pb-16 sm:pt-32"
+  >
+    <div
+      class="pointer-events-none absolute -right-32 top-0 h-96 w-96 rounded-full bg-bks-sage/15 blur-3xl"
+      aria-hidden="true"
+    ></div>
+    <div
+      class="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-bks-gold/10 blur-3xl"
+      aria-hidden="true"
+    ></div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <p class="mb-4 font-semibold uppercase tracking-[0.2em] text-bks-gold">Bundelkhand Seeds · Katra, Sahaonaka</p>
+      <h1 class="font-serif text-4xl font-bold leading-[1.1] tracking-tight text-bks-forest-dark sm:text-5xl lg:max-w-4xl lg:text-[3.25rem]">
+        Premium vegetable <span class="text-bks-forest">green pea seeds</span> rooted in Uttar Pradesh soil
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-stone-700">
+        For decades, growers across India have trusted our selection and stewardship of high-performing pea genetics. Our
+        flagship copyrighted variety —
+        <span class="font-semibold text-bks-forest">Chamatkar®</span>
+        — is bred for dependable stands and vigorous field performance in both Rabi and Kharif planning windows.
+      </p>
+      <div class="mt-10 flex flex-wrap items-center gap-4">
+        <a
+          routerLink="/products"
+          class="inline-flex rounded-bks-lg bg-bks-forest px-6 py-3.5 font-semibold text-white shadow-md shadow-bks-forest/20 outline-offset-2 transition hover:bg-bks-forest-dark hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bks-forest"
+        >
+          View seed varieties
+        </a>
+        <a
+          href="tel:+919415114208"
+          class="inline-flex items-center rounded-bks-lg border-2 border-bks-sage-soft bg-white px-6 py-3.5 font-semibold text-bks-earth transition hover:border-bks-sage hover:bg-bks-paper"
+        >
+          Speak with our team
+        </a>
       </div>
     </div>
+  </section>
 
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
+  <!-- Trust -->
+  <section class="border-b border-stone-200/70 bg-white/70 py-10 backdrop-blur-sm">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:grid-cols-3 sm:gap-12 sm:px-6 lg:px-8">
+      <div>
+        <h2 class="font-serif text-lg font-semibold text-bks-forest">Registered &amp; traceable</h2>
+        <p class="mt-2 text-sm leading-relaxed text-stone-600">
+          Bundelkhand Seeds Pvt. Ltd. · <span class="whitespace-nowrap">CIN U15132UP2007PTC032785</span>
+        </p>
+      </div>
+      <div>
+        <h2 class="font-serif text-lg font-semibold text-bks-forest">Headquartered in Jalaun</h2>
+        <p class="mt-2 text-sm leading-relaxed text-stone-600">Katra, Sahaonaka, Jalaun — 285123, Uttar Pradesh, India.</p>
+      </div>
+      <div>
+        <h2 class="font-serif text-lg font-semibold text-bks-forest">Committed to growers</h2>
+        <p class="mt-2 text-sm leading-relaxed text-stone-600">
+          Technical guidance, transparent labelling on every lot, and seed handled with disciplined conditioning standards.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Add Navigation -->
-    <div class="swiper-button-next"></div> <!-- Next Button -->
-    <div class="swiper-button-prev"></div> <!-- Previous Button -->
-  </div>
+  <!-- Gallery -->
+  <section class="py-14 sm:py-16 lg:py-20">
+    <div class="mx-auto mb-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="font-serif text-2xl font-bold text-bks-forest-dark sm:text-3xl">Field &amp; product gallery</h2>
+      <p class="mt-2 max-w-2xl text-stone-600">
+        A glimpse of our pea seed operations, grading, packaging, and the landscapes we serve alongside farmers nationwide.
+      </p>
+    </div>
+
+    <div class="swiper-container px-4 sm:px-6 lg:px-8">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of images">
+          <img [src]="item.src" [alt]="item.alt" class="h-auto w-full rounded-bks-lg object-cover shadow-lg ring-1 ring-stone-900/5" />
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
 </div>
