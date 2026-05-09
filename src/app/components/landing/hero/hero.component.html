@@ -13,7 +13,7 @@
     ></div>
 
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <p class="mb-4 font-semibold uppercase tracking-[0.2em] text-bks-gold">Bundelkhand Seeds · Katra, Sahaonaka</p>
+      <p class="mb-4 font-semibold uppercase tracking-[0.2em] text-bks-gold">Bundelkhand Seeds · Jalaun, Uttar Pradesh</p>
       <h1 class="font-serif text-4xl font-bold leading-[1.1] tracking-tight text-bks-forest-dark sm:text-5xl lg:max-w-4xl lg:text-[3.25rem]">
         Premium vegetable <span class="text-bks-forest">green pea seeds</span> rooted in Uttar Pradesh soil
       </h1>
@@ -71,16 +71,10 @@
       </p>
     </div>
 
-    <div class="swiper-container px-4 sm:px-6 lg:px-8">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" *ngFor="let item of images">
-          <img [src]="item.src" [alt]="item.alt" class="h-auto w-full rounded-bks-lg object-cover shadow-lg ring-1 ring-stone-900/5" />
-        </div>
-      </div>
-
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 sm:grid-cols-2 sm:gap-8 sm:px-6 lg:grid-cols-3 lg:gap-10 lg:px-8">
+      @for (item of images; track item.src) {
+        <img [src]="item.src" [alt]="item.alt" class="gallery-photo h-auto w-full rounded-bks-lg object-cover shadow-lg ring-1 ring-stone-900/5" />
+      }
     </div>
   </section>
 </div>

@@ -25,10 +25,3 @@
     min-height: 100vh;
   }
 }
-
-/* Swiper (used on landing) — brand-tinted controls */
-:root {
-  --swiper-theme-color: #1a4d3a;
-  --swiper-navigation-size: 1.75rem;
-  --swiper-pagination-bullet-inactive-opacity: 0.35;
-}

@@ -1,23 +1,16 @@
-import {Component, OnInit} from '@angular/core';
-import Swiper from 'swiper';
-import 'swiper/css'; // Import default Swiper styles
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import {Navigation, Pagination} from 'swiper/modules';
-import {NgForOf} from '@angular/common';
+import {Component} from '@angular/core';
 import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-hero',
   imports: [
-    NgForOf,
     RouterLink
   ],
   templateUrl: './hero.component.html',
   standalone: true,
   styleUrl: './hero.component.scss'
 })
-export class HeroComponent implements OnInit {
+export class HeroComponent {
   /** Same deployment pattern as `/bks-logo.png`: files live under `public/` and are copied to site root by the build. */
   images = [
     { src: '/bks1.png', alt: 'Green pea seed production and agronomy at Bundelkhand Seeds facilities' },
@@ -32,30 +25,4 @@ export class HeroComponent implements OnInit {
     // { src: '/bks10.png', alt: 'Close-up of healthy green pea pods in the field' },
     // { src: '/bks11.png', alt: 'Bundelkhand Seeds team with growers at demonstration plot' },
   ];
-
-  ngOnInit(): void {
-    new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      modules: [Pagination, Navigation],
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      },
-    });
-  }
 }
