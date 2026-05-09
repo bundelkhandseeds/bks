@@ -23,14 +23,14 @@ export class HeroComponent implements OnInit {
     { src: '/bks1.png', alt: 'Green pea seed production and agronomy at Bundelkhand Seeds facilities' },
     { src: '/bks2.png', alt: 'Pea crop stand in Bundelkhand growing region fields' },
     { src: '/bks3.png', alt: 'Quality vegetable seed grading and conditioning line' },
-    { src: '/bks4.png', alt: 'Farmers inspecting pea pod development during Rabi season' },
-    { src: '/bks5.png', alt: 'Seed processing equipment for vegetable pea genetics' },
-    { src: '/bks6.png', alt: 'Harvested pea plants ready for threshing operations' },
-    { src: '/bks7.png', alt: 'Field trial plots comparing pea varieties' },
-    { src: '/bks8.png', alt: 'Packaged pea seed sacks prepared for distributor dispatch' },
-    { src: '/bks9.png', alt: 'Irrigated pea cultivation in Uttar Pradesh farmland' },
-    { src: '/bks10.png', alt: 'Close-up of healthy green pea pods in the field' },
-    { src: '/bks11.png', alt: 'Bundelkhand Seeds team with growers at demonstration plot' },
+    // { src: '/bks4.png', alt: 'Farmers inspecting pea pod development during Rabi season' },
+    // { src: '/bks5.png', alt: 'Seed processing equipment for vegetable pea genetics' },
+    // { src: '/bks6.png', alt: 'Harvested pea plants ready for threshing operations' },
+    // { src: '/bks7.png', alt: 'Field trial plots comparing pea varieties' },
+    // { src: '/bks8.png', alt: 'Packaged pea seed sacks prepared for distributor dispatch' },
+    // { src: '/bks9.png', alt: 'Irrigated pea cultivation in Uttar Pradesh farmland' },
+    // { src: '/bks10.png', alt: 'Close-up of healthy green pea pods in the field' },
+    // { src: '/bks11.png', alt: 'Bundelkhand Seeds team with growers at demonstration plot' },
   ];
 
   ngOnInit(): void {
