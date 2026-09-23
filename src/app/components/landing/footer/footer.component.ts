@@ -26,6 +26,10 @@ export class FooterComponent {
 
   private shouldShowFooter(): boolean {
     const path = this.router.url.split(/[?#]/)[0];
-    return !(path.endsWith('/products/chamatkar') || path.endsWith('/products/p3'));
+    return !(
+      path.endsWith('/products/chamatkar') ||
+      path.endsWith('/products/p3') ||
+      path.endsWith('/products/selection-63')
+    );
   }
 }
